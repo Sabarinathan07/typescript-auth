@@ -6,3 +6,10 @@ node_modules
 # Build output directory
 out/
 dist/
+
+# Environment files
+.env
+.env.local
+.env.development
+.env.test
+.env.production
