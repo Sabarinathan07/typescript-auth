@@ -16,3 +16,7 @@ dist/
 
 # macOS system files
 .DS_Store
+
+# Log files
+*.log
+logs/
