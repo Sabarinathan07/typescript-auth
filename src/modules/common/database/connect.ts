@@ -4,8 +4,7 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 export const connectDB = async () => {
-    const mongoURI =
-        process.env.MONGO_URI || 'mongodb://localhost:27017/authDB';
+    const mongoURI = process.env.MONGO_URI || '';
 
     try {
         await mongoose.connect(mongoURI);

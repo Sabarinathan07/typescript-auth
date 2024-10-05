@@ -16,7 +16,7 @@ dotenv.config(); // Load .env file
 const app = express();
 app.use(express.json());
 
-const jwtSecret = process.env.JWT_SECRET || 'default_secret';
+const jwtSecret = process.env.JWT_SECRET || 'secret';
 app.use(cookieParser(jwtSecret));
 
 const userRepository = new UserRepository();
@@ -41,11 +41,6 @@ app.post('/login', (req, res) => authController.login(req, res));
 
 // Refresh token route
 app.post('/refresh-token', authController.refreshToken);
-
-// // Hello World route
-// app.get('/hello', (req: Request, res: Response, next: NextFunction) => {
-//     res.send('Hello World');
-// });
 
 app.use('/api', userRouter);
 

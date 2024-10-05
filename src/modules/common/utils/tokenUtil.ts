@@ -1,7 +1,6 @@
 import jwt from 'jsonwebtoken';
-const accessTokenSecret = process.env.JWT_SECRET || 'accesssecret';
-const refreshTokenSecret =
-    process.env.JWT_REFRESH_SECRET || 'refreshsecret';
+const accessTokenSecret = process.env.JWT_SECRET || 'secret';
+const refreshTokenSecret = process.env.JWT_REFRESH_SECRET || 'secret';
 
 export class TokenUtil {
     generateToken(userId: string) {
