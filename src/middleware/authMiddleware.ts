@@ -1,11 +1,6 @@
 import { UserModel } from './../modules/users/models/userModel';
 import { TokenUtil } from './../modules/common/utils/tokenUtil';
-import {
-    Request,
-    Response,
-    NextFunction,
-    RequestHandler,
-} from 'express';
+import { Response, NextFunction, RequestHandler } from 'express';
 import { customRequest } from '../modules/users/interfaces/request.interface';
 
 export class AuthMiddleware {

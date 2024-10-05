@@ -1,10 +1,4 @@
-import {
-    Router,
-    Request,
-    Response,
-    NextFunction,
-    RequestHandler,
-} from 'express';
+import { Router, Response, RequestHandler } from 'express';
 import { TokenUtil } from './../../../../modules/common/utils/tokenUtil';
 import { UserModel } from './../../../../modules/users/models/userModel';
 import { AuthMiddleware } from './../../../../middleware/authMiddleware';
