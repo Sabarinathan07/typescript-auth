@@ -41,7 +41,6 @@ app.post('/login', (req, res) => authController.login(req, res));
 
 // Refresh token route
 app.post('/refresh-token', authController.refreshToken);
-
 app.use('/api', userRouter);
 
 // Start server
